@@ -17,5 +17,10 @@ namespace VogCodeChallenge.API.Repositories
         {
             return EmployeeSeed.GetAll().ToList();
         }
+
+        public IEnumerable<Employee> GetByDepartmentId(int departmentId)
+        {
+            return EmployeeSeed.GetAll().Where(e => e.DepartmentId == departmentId);
+        }
     }
 }

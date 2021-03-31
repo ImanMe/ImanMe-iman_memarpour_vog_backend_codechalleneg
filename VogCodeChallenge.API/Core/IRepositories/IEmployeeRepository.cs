@@ -7,5 +7,6 @@ namespace VogCodeChallenge.API.Core.IRepositories
     {
         IEnumerable<Employee> GetAll();
         IList<Employee> ListAll();
+        IEnumerable<Employee> GetByDepartmentId(int departmentId);
     }
 }
