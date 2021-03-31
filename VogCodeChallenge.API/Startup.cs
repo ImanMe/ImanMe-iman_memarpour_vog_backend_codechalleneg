@@ -21,7 +21,8 @@ namespace VogCodeChallenge.API
         {
             services.AddControllers();
 
-            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            // services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            services.AddScoped<IEmployeeRepository, EmployeeRepositoryDb>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
