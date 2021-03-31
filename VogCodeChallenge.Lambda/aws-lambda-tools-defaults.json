@@ -1,0 +1,10 @@
+{
+  "profile": "default",
+  "region": "ca-central-1",
+  "configuration": "Debug",
+  "framework": "netcoreapp3.1",
+  "function-runtime": "dotnetcore3.1",
+  "function-memory-size": 256,
+  "function-timeout": 20,
+  "function-handler": "VogCodeChallenge.Lambda::VogCodeChallenge.Lambda.Function::Handler"
+}
